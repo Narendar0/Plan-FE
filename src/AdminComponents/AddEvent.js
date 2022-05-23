@@ -31,6 +31,9 @@ function AddEvent() {
         <div className='row color'>
         <h4 className='mb-5'>Add New Events</h4>
           <form onSubmit={formik.handleSubmit}>
+            <br/>
+            <br/>
+            
 
             <div className="form-outline mb-4">
               <label className="form-label" for="form6Example3">Image URL</label>
