@@ -42,7 +42,7 @@ function UserDashboard() {
                     <div id="content">
 
                         <div className="d-sm-flex justify-content-between mb-3 sticky-top" style={{ background: "black", padding: "20px" }}>
-                            <h1 className="h3 mb-0" style={{ color: "white" }}>All Events</h1>
+                            <h1 className="h3 mb-0" style={{ color: "white" }}>Plans</h1>
                             <Link className="nav-link collapsed " to="/" data-toggle="collapse" data-target="#collapseTwo"
                                 aria-expanded="true" aria-controls="collapseTwo">
                                 <i className="fas fa-fw fa-sign-out"></i>
@@ -65,10 +65,9 @@ function UserDashboard() {
                                                         <div className="card-body fw-bold " >
                                                            
                                                             <h2 className="text-danger "> {event.eventname}</h2>
-                                                            <h5 className='fs-6 fw-bold' >Eventdate : {event.date} : 12.00pm</h5>
-                                                            <h5 className='text-primary fs-6 fw-bold'>Event type : online</h5>                                                   
+                                                            <h5 className='fs-6 fw-bold' >Ending date : {event.date} : 12.00pm</h5>
                                                             <Link to={"/registerform"} >                           
-                                                                <button className='btn btn-primary mt-3 w-50' >Register</button>
+                                                                <button className='btn btn-primary mt-3 w-50' >Subscribe</button>
                                                             </Link>
                                                                                                                      
                                                         </div>

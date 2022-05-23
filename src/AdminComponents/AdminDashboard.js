@@ -53,14 +53,14 @@ function AdminDashboard() {
                     <li className="nav-item active">
                         <div className="nav-link" to="/userdashboard">
                             <i className="fas fa-film"></i>
-                            <span>List of All Events</span></div>
+                            <span>List of All Plans</span></div>
                     </li>
                     <hr className="sidebar-divider" />
                     <li className="nav-item">
                         <Link className="nav-link collapsed" to={"/ParticipateList"} data-toggle="collapse" data-target="#collapseTwo"
                             aria-expanded="true" aria-controls="collapseTwo">
                             <i className="fas fa-fw fa-film"></i>
-                            <span>Participate List</span>
+                            <span>Subscribers List</span>
                         </Link>
                     </li>
                     <li className="nav-item">
@@ -77,9 +77,9 @@ function AdminDashboard() {
                     <div id="content">
 
                         <div className="d-sm-flex align-items-center justify-content-between mb-4 mt-3">
-                            <h1 className="h3 mb-0 text-gray text-dark ml-3">All Event Data</h1>
+                            <h1 className="h3 mb-0 text-gray text-dark ml-3">All Data Plans</h1>
 
-                            <Link to={"/add-event"} className="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mr-4 px-3">Add Event</Link>
+                            <Link to={"/add-event"} className="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mr-4 px-3">Add New Plan</Link>
                         </div>
 
                         <div className="row">
@@ -95,7 +95,7 @@ function AdminDashboard() {
 
                                                             <h2 className="text-danger "> {event.eventname}</h2>
                                                             
-                                                            <h5 className='fs-6 fw-bold' >Eventdate : {event.date} : 12.00pm</h5>
+                                                            <h5 className='fs-6 fw-bold' >Ending date : {event.date} : 12.00pm</h5>
                                                            
                                                             <Link to={`/edit-event/${event._id}`}><button className='btn btn-primary mr-3'>Edit</button></Link>
                                                             <button onClick={() => handleDelete(event._id)} className='btn btn-danger'>Delete</button>

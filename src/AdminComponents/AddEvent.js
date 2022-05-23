@@ -29,7 +29,7 @@ function AddEvent() {
 
       <div className='container mt-5'>
         <div className='row color'>
-        <h4 className='mb-5'>Add New Events</h4>
+        <h4 className='mb-5'>Add New Plans</h4>
           <form onSubmit={formik.handleSubmit}>
 
             <div className="form-outline mb-4">
@@ -39,18 +39,18 @@ function AddEvent() {
 
 
             <div className="form-outline mb-4">
-              <label className="form-label">Eventname</label>
-              <input type="text" className="form-control" name='eventname' onChange={formik.handleChange} value={formik.values.eventname} placeholder="Event Name" required />
+              <label className="form-label">Plan name</label>
+              <input type="text" className="form-control" name='eventname' onChange={formik.handleChange} value={formik.values.eventname} placeholder="Plan Name" required />
             </div>
 
 
 
             <div className="form-outline mb-4">
-              <label className="form-label">Event Date</label>
+              <label className="form-label">Plan Ends</label>
               <input type="date" name="date" className="form-control" onChange={formik.handleChange} value={formik.values.date} required />
             </div>
 
-            <button type="submit" className="btn btn-primary btn-block mb-4">Add</button>
+            <button type="submit" className="btn btn-primary btn-block mb-4">Add plan</button>
           </form>
         </div>
         {/* Add event title */}

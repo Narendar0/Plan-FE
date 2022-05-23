@@ -32,7 +32,7 @@ const Registerform = () => {
         <div className='container '  >
           <div className='row tableform sticky-top text-center'>
             <div className='col-sm'>
-              <h1>Register form</h1>
+              <h1>Subscription</h1>
             </div>
           </div>
           <div className='row mt-4 tableform  '>
@@ -61,12 +61,12 @@ const Registerform = () => {
 
                 </div>
                 <div className="col-md-3">
-                  <label for="validationCustom04" className="form-label">Member</label>
-                  <select className="form-select" name='member' id="validationCustom04" onChange={formik.handleChange} value={formik.values.member} required >
+                  <label for="validationCustom04" className="form-label">Plan</label>
+                  <select className="form-select" name='plan' id="validationCustom04" onChange={formik.handleChange} value={formik.values.plan} required >
                     <option selected disabled value="">Choose...</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <option>Silver</option>
+                    <option>Gold</option>
+                    <option>Platinum</option>
                   </select>
 
                 </div>
@@ -81,7 +81,7 @@ const Registerform = () => {
                 </div>
 
                 <div className="col-12 d-flex justify-conter-center">
-                  <button className="btn btn-primary w-50" type="submit">Submit form</button>
+                  <button className="btn btn-primary w-50" type="submit">Subscribe</button>
                 </div>
               </form>
             </div>

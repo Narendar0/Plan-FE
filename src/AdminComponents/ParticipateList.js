@@ -37,7 +37,7 @@ function ParticipateList() {
                     <th>Name</th>
                     <th>Email</th>
                     <th>Number</th>
-                    <th>Member</th>
+                    <th>Plan</th>
                     <th>Gender</th>
 
                   </tr>
@@ -50,7 +50,7 @@ function ParticipateList() {
                         <td>{user.name}</td>
                         <td>{user.email}</td>
                         <td>{user.number}</td>
-                        <td>{user.member}</td>
+                        <td>{user.plan}</td>
                         <td>{user.gender}</td>
                       </tr>
 
