@@ -38,7 +38,7 @@ function EditEvent() {
     return (
         <>
             <div className='container mt-5 color'>
-                <h4 className='mb-5'>Edit Plan</h4>
+                <h4 className='mb-5'>Edit Event</h4>
                 <form onSubmit={formik.handleSubmit}>
 
                     <div className="form-outline mb-4">
@@ -47,12 +47,12 @@ function EditEvent() {
                     </div>
 
                     <div className="form-outline mb-4">
-                        <label className="form-label">Plan name</label>
-                        <input type="text" className="form-control" name='eventname' onChange={formik.handleChange} value={formik.values.eventname} placeholder="Plan Name" required />
+                        <label className="form-label">Eventname</label>
+                        <input type="text" className="form-control" name='eventname' onChange={formik.handleChange} value={formik.values.eventname} placeholder="Event Name" required />
                     </div>
 
                     <div className="form-outline mb-4">
-                        <label className="form-label">Ending Date</label>
+                        <label className="form-label">Event Date</label>
                         <input type="date" name="date" className="form-control" onChange={formik.handleChange} value={formik.values.date} required />
                     </div>
 

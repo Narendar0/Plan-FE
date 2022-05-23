@@ -62,11 +62,12 @@ const Registerform = () => {
                 </div>
                 <div className="col-md-3">
                   <label for="validationCustom04" className="form-label">Plan</label>
-                  <select className="form-select" name='plan' id="validationCustom04" onChange={formik.handleChange} value={formik.values.plan} required >
+                  <select className="form-select" name='member' id="validationCustom04" onChange={formik.handleChange} value={formik.values.member} required >
                     <option selected disabled value="">Choose...</option>
                     <option>Silver</option>
                     <option>Gold</option>
                     <option>Platinum</option>
+                    <option>Diamond</option>
                   </select>
 
                 </div>
@@ -81,7 +82,7 @@ const Registerform = () => {
                 </div>
 
                 <div className="col-12 d-flex justify-conter-center">
-                  <button className="btn btn-primary w-50" type="submit">Subscribe</button>
+                  <button className="btn btn-primary w-50" type="submit">Submit form</button>
                 </div>
               </form>
             </div>
