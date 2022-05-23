@@ -29,7 +29,7 @@ function AddEvent() {
 
       <div className='container mt-5'>
         <div className='row color'>
-        <h4 className='mb-5'>Add Plans</h4>
+        <h4 className='mb-5'>Add New Events</h4>
           <form onSubmit={formik.handleSubmit}>
 
             <div className="form-outline mb-4">
